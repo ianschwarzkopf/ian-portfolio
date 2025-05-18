@@ -1,4 +1,3 @@
 - links under name header (icons to social medias and sites) or in navbar?
-- education section
 - project page (2 x infinite grid?)
-- ABOUT me page? should this just be education
+- favicon

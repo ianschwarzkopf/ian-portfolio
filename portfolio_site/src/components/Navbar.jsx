@@ -87,15 +87,32 @@ function Navbar() {
           </a>
         </Tooltip>
 
+        <div className={styles.divider}></div>
 
-
-        <Tooltip message="Contact" bottomPercent="25" leftPercent="212">
+        <Tooltip message="LinkedIn" bottomPercent="25" leftPercent="216">
           <a
-            onClick={() => scrollTo('contact')}
-            className={styles.icon_container}
-            style={activeSection === 'contact' ? { backgroundColor: 'rgba(0, 255, 117, 0.4)' } : {}}
+            target="blank_" href="https://www.linkedin.com/in/ian-schwarzkopf-85a850249/"
+            className={styles.icon_container_link}
           >
-            <img src={LinkedInIcon} alt="Contact Icon" />
+            <img src={LinkedInIcon} alt="LinkedIn Icon" />
+          </a>
+        </Tooltip>
+
+        <Tooltip message="Resume" bottomPercent="25" leftPercent="216">
+          <a
+            target="blank_" href="behance.net/ianschwarzkopf"
+            className={styles.icon_container_link}
+          >
+            <img src={LinkedInIcon} alt="LinkedIn Icon" />
+          </a>
+        </Tooltip>
+
+        <Tooltip message="Email" bottomPercent="25" leftPercent="216">
+          <a
+            href="mailto:schwarzkopfian@gmail.com"
+            className={styles.icon_container_link}
+          >
+            <img src={LinkedInIcon} alt="LinkedIn Icon" />
           </a>
         </Tooltip>
       </div>

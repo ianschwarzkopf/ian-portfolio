@@ -2,7 +2,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  margin-top: 33vh;
+  margin-top: 30vh;
   margin-left: 24px;
 }
 
@@ -20,7 +20,7 @@ nav {
   background: transparent;
 }
 
-.icon_container {
+.icon_container, .icon_container_link {
   display: flex;
   border: 1px solid rgba(230, 232, 230, 0.2);
   border-radius: 12px;
@@ -36,4 +36,17 @@ nav {
 
 .icon_container:hover {
   transform: scale(1.25);
+}
+
+.icon_container_link:hover {
+  transform: scale(1.25);
+  background-color: rgba(0, 71, 255, 0.4);
+}
+
+.divider {
+  width: 25%;
+  height: 3px;
+  background: transparent;
+  border: 1px solid rgba(230, 232, 230, 0.2);
+  border-radius: 12px;
 }
