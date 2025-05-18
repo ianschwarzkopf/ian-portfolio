@@ -16,12 +16,10 @@ function App() {
         <AnimatedBackground />
         <Navbar />
 
-        <div className="content_container">
-          <Home />
-
-        </div>
+        <Home />
 
         <Footer />
+
     </>
   )
 }
