@@ -4,6 +4,12 @@
   margin: auto;
 }
 
+.footer a {
+  color: rgba(230, 232, 230, 1);
+  text-decoration: underline;
+  font-weight: 900;
+}
+
 @media only screen and (max-width: 768px) {
   .footer p {
     font-size: .75rem;

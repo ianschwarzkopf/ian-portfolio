@@ -47,18 +47,18 @@ function Home() {
             <div className={styles.card}>
               <h3>Education</h3>
               <div className={styles.education}>
-                <span><h4>Creative Technologies</h4><h4>Berry College</h4></span>
-                <span><h5>Bachelor of Science</h5><h5>August 2022 - May 2025</h5></span>
+                <span><h4>Creative Technologies</h4><h4 style={{textAlign: 'right'}}>Berry College</h4></span>
+                <span><h5>Bachelor of Science</h5><h5 style={{textAlign: 'right'}}>Aug 2022 - May 2025</h5></span>
                 <ul>
-                  <li>Developed webpages using HTML, CSS, and JavaScript</li>
-                  <li>Updated pages with new information</li>
-                  <li>Designed front-end user experience for various pages</li>
+                  <li>Summa Cum Laude with a 3.96 GPA</li>
+                  <li>Dean's List every year</li>
+                  <li>Graduated in 3 years</li>
                 </ul>
               </div>
               <h3>Experience</h3>
               <div className={styles.experience}>
-                <span><h4>Web Developer</h4><h4>Clip Art Monster</h4></span>
-                <span><h5>Remote</h5><h5>May 2025 - Current</h5></span>
+                <span><h4>Web Developer</h4><h4 style={{textAlign: 'right'}}>Clip Art Monster</h4></span>
+                <span><h5>Remote</h5><h5 style={{textAlign: 'right'}}>May 2025 - Current</h5></span>
                 <ul>
                   <li>Developed webpages using HTML, CSS, and JavaScript</li>
                   <li>Updated pages with new information</li>
@@ -66,8 +66,8 @@ function Home() {
                 </ul>
               </div>
               <div className={styles.experience}>
-                <span><h4>Sound Coordinator</h4><h4>Chaplain's Office</h4></span>
-                <span><h5>Mt. Berry, GA</h5><h5>August 2023 - May 2025</h5></span>
+                <span><h4>Sound Coordinator</h4><h4 style={{textAlign: 'right'}}>Chaplain's Office</h4></span>
+                <span><h5>Mt. Berry, GA</h5><h5 style={{textAlign: 'right'}}>Aug 2023 - May 2025</h5></span>
                 <ul>
                   <li>Operated the soundboard to create a smooth and crisp sounding church service</li>
                   <li>Managed and assisted people in the office by providing coffee, guidance, and directions</li>
@@ -75,8 +75,8 @@ function Home() {
                 </ul>
               </div>
               <div className={styles.experience}>
-                <span><h4>Teaching Assistant</h4><h4>Berry College</h4></span>
-                <span><h5>Mt. Berry, GA</h5><h5>August 2024 - May 2025</h5></span>
+                <span><h4>Teaching Assistant</h4><h4 style={{textAlign: 'right'}}>Berry College</h4></span>
+                <span><h5>Mt. Berry, GA</h5><h5 style={{textAlign: 'right'}}>Aug 2024 - May 2025</h5></span>
                 <ul>
                   <li>Assisted students in their learning by answering any questions or problems</li>
                   <li>Provided relevant feedback to students in need of guidance with their projects to keep them on track</li>
