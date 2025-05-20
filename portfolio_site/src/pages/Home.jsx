@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './Home.module.css'
 
 import Tooltip from '../components/Tooltip'
 import Project from '../components/Project'
+import ProjShowcase from '../components/ProjShowcase';
+
+import projectsData from '../data/projectsData';
 
 import Headshot from '../assets/Ian2.jpg'
 import i_sql from '../assets/sql.svg'
@@ -25,6 +28,8 @@ function Home() {
   { src: i_c, label: "C++" },
   { src: i_java, label: "Java" },
 ];
+
+const [activeProject, setActiveProject] = useState(null);
 
   return (
     <>
@@ -99,6 +104,7 @@ function Home() {
                 tag2="ESP32"
                 tag3="C++"
                 tag4="Soldering"
+                onClick={() => setActiveProject(projectsData.monovox)}
               />
               <Project
                 name="Head to Head"
@@ -108,6 +114,7 @@ function Home() {
                 tag2="HTML"
                 tag3="CSS"
                 tag4="API"
+                onClick={() => setActiveProject(projectsData.headtohead)}
               />
               <Project
                 name="RunTime"
@@ -117,6 +124,7 @@ function Home() {
                 tag2="Bootstrap"
                 tag3="SQL"
                 tag4="PHP"
+                onClick={() => setActiveProject(projectsData.runtime)}
               />
               <Project
                 name="Deimos Sound Study"
@@ -126,12 +134,14 @@ function Home() {
                 tag2="ESP32"
                 tag3="HTML"
                 tag4="CSS"
+                onClick={() => setActiveProject(projectsData.deimos)}
               />
 
             </div>
           </div>
 
         </section>
+        <ProjShowcase project={activeProject} onClose={() => setActiveProject(null)} />
         <section id="contact">
 
 

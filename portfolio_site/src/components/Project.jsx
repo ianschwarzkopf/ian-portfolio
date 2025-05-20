@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import styles from './Project.module.css';
+import ProjShowcase from './ProjShowcase';
 
-function Tooltip({name, img, desc, tag1, tag2, tag3, tag4}){
+function Project({name, img, desc, tag1, tag2, tag3, tag4, onClick}){
 
   return (
-    <div className={styles.project_wrapper}>
-      <img src={img}/>
+    <div className={styles.project_wrapper} onClick={onClick}>
+      <img src={img} alt={name}/>
       <h1>{name}</h1>
       <h2>{desc}</h2>
       <div className={styles.tag_wrapper}>
@@ -18,4 +19,4 @@ function Tooltip({name, img, desc, tag1, tag2, tag3, tag4}){
   )
 }
 
-export default Tooltip
+export default Project
