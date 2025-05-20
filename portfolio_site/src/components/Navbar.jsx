@@ -5,6 +5,8 @@ import HomeIcon from '../assets/home_icon.svg'
 import FolderIcon from '../assets/folder_icon.svg'
 import ProfileIcon from '../assets/profile_icon.svg'
 import LinkedInIcon from '../assets/linkedin_icon.svg'
+import DocIcon from '../assets/doc_icon.svg'
+import EmailIcon from '../assets/email_icon.svg'
 
 import Tooltip from './Tooltip'
 
@@ -98,21 +100,21 @@ function Navbar() {
           </a>
         </Tooltip>
 
-        <Tooltip message="Resume" bottomPercent="25" leftPercent="216">
+        <Tooltip message="Check out my resume!" bottomPercent="25" leftPercent="301">
           <a
-            target="blank_" href="behance.net/ianschwarzkopf"
+            target="blank_" href="https://www.behance.net/ianschwarzkopf"
             className={styles.icon_container_link}
           >
-            <img src={LinkedInIcon} alt="LinkedIn Icon" />
+            <img src={DocIcon} alt="Document Icon" />
           </a>
         </Tooltip>
 
-        <Tooltip message="Email" bottomPercent="25" leftPercent="216">
+        <Tooltip message="Send me an email!" bottomPercent="25" leftPercent="276">
           <a
             href="mailto:schwarzkopfian@gmail.com"
             className={styles.icon_container_link}
           >
-            <img src={LinkedInIcon} alt="LinkedIn Icon" />
+            <img src={EmailIcon} alt="Email Icon" />
           </a>
         </Tooltip>
       </div>

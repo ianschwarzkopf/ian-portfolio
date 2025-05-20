@@ -1,0 +1,51 @@
+.project_wrapper {
+  border: 1px solid rgba(230, 232, 230, 0.2);
+  background: transparent;
+  border-radius: 12px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  animation: scrollLoop 20s linear infinite;
+}
+
+.project_wrapper h1 {
+  font-size: 24px;
+}
+
+.project_wrapper h2 {
+  font-size: 18px;
+  color: rgba(230, 232, 230, 0.75);
+}
+
+.tag_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project_tag {
+  border: 1px solid rgba(230, 232, 230, 0.2);
+  background: transparent;
+  border-radius: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.project_wrapper h3 {
+  font-size: 12px;
+  color: rgba(230, 232, 230, 0.75);
+  margin: .5rem;
+}
+
+.project_wrapper img {
+  width: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.project_wrapper:hover {
+  transform: scale(1.1);
+}

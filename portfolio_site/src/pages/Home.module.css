@@ -7,11 +7,12 @@
 
 .grid_wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 .card {
-  padding: 100px;
+  padding: 1rem;
   text-align: left;
 }
 
@@ -139,6 +140,10 @@
   .education {
     margin: 2rem 0 50px 0;
     width: 100%;
+  }
+  .grid_wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
 }

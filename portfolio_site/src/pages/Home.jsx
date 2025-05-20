@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Home.module.css'
 
 import Tooltip from '../components/Tooltip'
+import Project from '../components/Project'
 
 import Headshot from '../assets/Ian2.jpg'
 import i_sql from '../assets/sql.svg'
@@ -45,7 +46,7 @@ function Home() {
           </section>
           <section id="about">
             <div className={styles.card}>
-              <h3>Education</h3>
+              <h1>Education</h1>
               <div className={styles.education}>
                 <span><h4>Creative Technologies</h4><h4 style={{textAlign: 'right'}}>Berry College</h4></span>
                 <span><h5>Bachelor of Science</h5><h5 style={{textAlign: 'right'}}>Aug 2022 - May 2025</h5></span>
@@ -55,7 +56,7 @@ function Home() {
                   <li>Graduated in 3 years</li>
                 </ul>
               </div>
-              <h3>Experience</h3>
+              <h1>Experience</h1>
               <div className={styles.experience}>
                 <span><h4>Web Developer</h4><h4 style={{textAlign: 'right'}}>Clip Art Monster</h4></span>
                 <span><h5>Remote</h5><h5 style={{textAlign: 'right'}}>May 2025 - Current</h5></span>
@@ -87,7 +88,48 @@ function Home() {
 
         </section>
         <section id="projects">
+          <div className={styles.card}>
+            <h1>Projects</h1>
+            <div className={styles.grid_wrapper}>
+              <Project
+                name="Monovox"
+                img="/monovox_1.jpg"
+                desc="An analog synthesizer that blends raw voltage with real-time visual interaction"
+                tag1="PCB"
+                tag2="ESP32"
+                tag3="C++"
+                tag4="Soldering"
+              />
+              <Project
+                name="Head to Head"
+                img="/monovox_1.jpg"
+                desc="Music ranking website using the Spotify API and React"
+                tag1="React"
+                tag2="HTML"
+                tag3="CSS"
+                tag4="API"
+              />
+              <Project
+                name="RunTime"
+                img="/runtime_1.jpg"
+                desc="A run tracking webapp with user database"
+                tag1="HTML"
+                tag2="Bootstrap"
+                tag3="SQL"
+                tag4="PHP"
+              />
+              <Project
+                name="Deimos Sound Study"
+                img="/deimos_1.png"
+                desc="A decibel tracking device that was used to conduct a study on noise levels"
+                tag1="PCB"
+                tag2="ESP32"
+                tag3="HTML"
+                tag4="CSS"
+              />
 
+            </div>
+          </div>
 
         </section>
         <section id="contact">
