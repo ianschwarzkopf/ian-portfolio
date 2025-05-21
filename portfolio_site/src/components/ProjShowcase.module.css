@@ -1,4 +1,3 @@
-/* ProjShowcase.module.css */
 .overlay {
   position: fixed;
   top: 0;
@@ -27,24 +26,53 @@
 }
 
 .imageGallery {
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.imageGallery img {
+.imageGallery img, .imageGallery .video {
   width: 100%;
+  max-height: 60vh;
   border-radius: 24px;
   object-fit: cover;
   aspect-ratio: 16/9;
 }
 
-.video {
-  width: 100%;
-  border-radius: 24px;
-  object-fit: cover;
+.navButtonLeft, .navButtonRight {
+  cursor: pointer;
+  height: 100%;
   aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav_grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.previewVideo {
+  height: 100%;
+  font-size: 24px;
+  color: #E6E8E6;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16/9;
+  cursor: pointer;
+  border-radius: 24px;
+  transition: all 0.3s ease-in-out;
 }
 
 .button {
@@ -58,15 +86,21 @@
   height: 48px;
 }
 
+.navButtonRight:hover, .navButtonLeft:hover, .previewVideo {
+  transform: scale(1.05);
+}
+
 .overlay h1 {
   margin: 0;
 }
 
-.overlay p2 {
+.overlay p {
+  margin-left: 4px;
+}
+
+.overlay h4 {
   color: rgba(230, 232, 230, .75);
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  margin-left: 4px;
 }
 
 .tag_wrapper {
@@ -75,6 +109,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 .project_tag {
@@ -89,4 +124,37 @@
   font-size: 12px;
   color: rgba(230, 232, 230, 1);
   margin: .5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    box-sizing: border-box; /* prevent overflow from padding */
+  }
+
+  .nav_grid > * {
+    width: 100%;
+  }
+
+  .navButtonLeft,
+  .navButtonRight {
+    padding: 0;
+    margin: 0;
+  }
+
+  .imageGallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .previewVideo {
+    width: 100%;
+  }
+
+  .tag_wrapper {
+    margin-top: 1.5rem;
+  }
 }

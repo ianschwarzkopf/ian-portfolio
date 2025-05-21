@@ -117,9 +117,9 @@ const [activeProject, setActiveProject] = useState(null);
                 onClick={() => setActiveProject(projectsData.headtohead)}
               />
               <Project
-                name="RunTime"
+                name="runTime"
                 img="/runtime_1.jpg"
-                desc="A run tracking webapp with user database"
+                desc="A run tracking webapp with a user database"
                 tag1="HTML"
                 tag2="Bootstrap"
                 tag3="SQL"

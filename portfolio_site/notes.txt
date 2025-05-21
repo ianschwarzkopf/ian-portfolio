@@ -1,3 +1,4 @@
 - links under name header (icons to social medias and sites) or in navbar?
-- project page (2 x infinite grid?)
 - favicon
+- image of me
+- responsive navbar
