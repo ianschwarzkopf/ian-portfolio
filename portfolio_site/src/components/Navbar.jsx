@@ -14,12 +14,12 @@ const sections = ['home', 'about', 'projects', 'contact']
 
 function Navbar() {
   const [activeSection, setActiveSection] = useState()
-  const isScrollingRef = useRef(false)  // Flag to ignore scroll events temporarily
+  const isScrollingRef = useRef(false)
   const scrollTimeoutRef = useRef(null)
 
   useEffect(() => {
     const handleScroll = () => {
-      if (isScrollingRef.current) return // Ignore scroll events if scrolling programmatically
+      if (isScrollingRef.current) return
 
       const scrollY = window.scrollY
       const offsets = sections.map(id => {
@@ -34,7 +34,7 @@ function Navbar() {
     }
 
     window.addEventListener('scroll', handleScroll)
-    handleScroll() // run on mount
+    handleScroll()
 
     return () => window.removeEventListener('scroll', handleScroll)
   }, [activeSection])
@@ -46,10 +46,8 @@ function Navbar() {
       isScrollingRef.current = true
       el.scrollIntoView({ behavior: 'smooth' })
 
-      // Clear any previous timeout
       if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current)
 
-      // After 800ms (rough scroll duration), re-enable scroll handler
       scrollTimeoutRef.current = setTimeout(() => {
         isScrollingRef.current = false
       }, 800)

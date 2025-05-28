@@ -1,4 +1,1 @@
-- links under name header (icons to social medias and sites) or in navbar?
-- favicon
-- image of me
-- responsive navbar
+
