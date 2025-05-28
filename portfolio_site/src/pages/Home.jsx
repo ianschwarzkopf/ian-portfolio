@@ -7,7 +7,7 @@ import ProjShowcase from '../components/ProjShowcase';
 
 import projectsData from '../data/projectsData';
 
-import Headshot from '../assets/Ian2.jpg'
+import Headshot from '../assets/Ian.jpg'
 import i_sql from '../assets/sql.svg'
 import i_html from '../assets/html.svg'
 import i_css from '../assets/css.svg'
@@ -36,7 +36,7 @@ const [activeProject, setActiveProject] = useState(null);
       <div className={styles.home_container}>
         <section id="home">
             <div className={styles.card}>
-              <h1>Ian Schwarzkopf</h1>
+              <div className={styles.header_img}><h1>Ian Schwarzkopf</h1><img className={styles.profile_img} src={Headshot} alt="Picture of me" /></div>
               <h2>— a designer crafting interactive tools and experiences that empower creative exploration</h2>
             </div>
             <div className={styles.tech_container}>

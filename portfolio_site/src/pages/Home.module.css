@@ -67,6 +67,19 @@
   border-radius: 12px;
 }
 
+.header_img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile_img {
+  display: flex;
+  height: 175px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .experience {
   margin: 4rem 0 0 0;
   width: 100%;
@@ -92,6 +105,17 @@
 @media only screen and (max-width: 768px) {
   .home_container {
 
+  }
+
+  .header_img {
+    flex-direction: column;
+  }
+
+  .profile_img {
+    height: 70px;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
   }
 
   .experience {
