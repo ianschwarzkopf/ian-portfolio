@@ -89,7 +89,7 @@ function Navbar() {
           </a>
         </Tooltip>
 
-        <div className={styles.divider}></div>
+        {/* <div className={styles.divider}></div>
 
         <Tooltip message="LinkedIn" bottomPercent="25" leftPercent="216">
           <a
@@ -116,7 +116,7 @@ function Navbar() {
           >
             <img src={EmailIcon} alt="Email Icon" />
           </a>
-        </Tooltip>
+        </Tooltip> */}
       </div>
     </nav>
   )

@@ -17,6 +17,12 @@ import i_php from '../assets/php.svg'
 import i_c from '../assets/c++.svg'
 import i_react from '../assets/react.svg'
 
+import LinkedInIcon from '../assets/linkedin_icon.svg'
+import DocIcon from '../assets/doc_icon.svg'
+import EmailIcon from '../assets/email_icon.svg'
+
+import Resume from '../assets/Resume.pdf'
+
 function Home() {
   const icons = [
   { src: i_html, label: "HTML" },
@@ -36,7 +42,36 @@ const [activeProject, setActiveProject] = useState(null);
       <div className={styles.home_container}>
         <section id="home">
             <div className={styles.card}>
-              <div className={styles.header_img}><h1>Ian Schwarzkopf</h1><img className={styles.profile_img} src={Headshot} alt="Picture of me" /></div>
+              <div className={styles.header_img}><h1>Ian Schwarzkopf</h1>
+                <div className={styles.links_container}>
+                <Tooltip message="LinkedIn" bottomPercent="125" leftPercent="50">
+                  <a
+                    target="blank_" href="https://www.linkedin.com/in/ianschwarzkopf/"
+                    className={styles.icon_container_link}
+                  >
+                    <img src={LinkedInIcon} alt="LinkedIn Icon" />
+                  </a>
+                </Tooltip>
+
+                <Tooltip message="Check out my resume!" bottomPercent="125" leftPercent="50">
+                  <a
+                    target="blank_" href={Resume}
+                    className={styles.icon_container_link}
+                  >
+                    <img src={DocIcon} alt="Document Icon" />
+                  </a>
+                </Tooltip>
+
+                <Tooltip message="Send me an email!" bottomPercent="125" leftPercent="50">
+                  <a
+                    href="mailto:schwarzkopfian@gmail.com"
+                    className={styles.icon_container_link}
+                  >
+                    <img src={EmailIcon} alt="Email Icon" />
+                  </a>
+                </Tooltip>
+              </div><img className={styles.profile_img} src={Headshot} alt="Picture of me" /></div>
+
               <h2>— a designer crafting interactive tools and experiences that empower creative exploration</h2>
             </div>
             <div className={styles.tech_container}>
@@ -66,27 +101,27 @@ const [activeProject, setActiveProject] = useState(null);
                 <span><h4>Web Developer</h4><h4 style={{textAlign: 'right'}}>Clip Art Monster</h4></span>
                 <span><h5>Remote</h5><h5 style={{textAlign: 'right'}}>May 2025 - Current</h5></span>
                 <ul>
-                  <li>Developed webpages using HTML, CSS, and JavaScript</li>
-                  <li>Updated pages with new information</li>
-                  <li>Designed front-end user experience for various pages</li>
+                  <li>Built web pages using HTML, CSS, and JavaScript on a Django/Python backend</li>
+                  <li>Improved mobile usability with user-focused design and smooth animations</li>
+                  <li>Collaborated with team members to align visuals with user experience goals</li>
                 </ul>
               </div>
               <div className={styles.experience}>
                 <span><h4>Sound Coordinator</h4><h4 style={{textAlign: 'right'}}>Chaplain's Office</h4></span>
                 <span><h5>Mt. Berry, GA</h5><h5 style={{textAlign: 'right'}}>Aug 2023 - May 2025</h5></span>
                 <ul>
-                  <li>Operated the soundboard to create a smooth and crisp sounding church service</li>
-                  <li>Managed and assisted people in the office by providing coffee, guidance, and directions</li>
-                  <li>Operated cameras and live streams using OBS and various other programs</li>
+                  <li>Operated soundboard and managed live audio for weekly services</li>
+                  <li>Controlled camera and live streams using OBS to broadcast lectures and events</li>
+                  <li>Provided hospitality to office visitors, offering coffee, guidance, and directions</li>
                 </ul>
               </div>
               <div className={styles.experience}>
                 <span><h4>Teaching Assistant</h4><h4 style={{textAlign: 'right'}}>Berry College</h4></span>
                 <span><h5>Mt. Berry, GA</h5><h5 style={{textAlign: 'right'}}>Aug 2024 - May 2025</h5></span>
                 <ul>
-                  <li>Assisted students in their learning by answering any questions or problems</li>
-                  <li>Provided relevant feedback to students in need of guidance with their projects to keep them on track</li>
-                  <li>Provided time for students to get help with projects when the Professor was not available</li>
+                  <li>Supported students across three course sections, providing personalized help and feedback</li>
+                  <li>Assisted students with 3D modeling, electronic circuits, and Java programming</li>
+                  <li>Delivered hands-on instruction and guidance on technical concepts, improving student comprehension and project quality</li>
                 </ul>
               </div>
             </div>
