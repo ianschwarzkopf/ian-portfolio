@@ -6,6 +6,9 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   animation: scrollLoop 20s linear infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project_wrapper h1 {

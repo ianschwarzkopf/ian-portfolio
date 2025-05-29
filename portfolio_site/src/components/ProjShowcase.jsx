@@ -70,7 +70,7 @@ function ProjShowcase({project, onClose}){
         </div>
 
 
-        <p>{project.details}</p>
+        <p dangerouslySetInnerHTML={{ __html: project.details }}/>
         <div className={styles.tag_wrapper}>
           {project.tags.map((tag, idx) => (
             <div className={styles.project_tag} key={idx}><h3>{`${tag}`}</h3></div>

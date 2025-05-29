@@ -17,6 +17,7 @@ import i_php from '../assets/php.svg'
 import i_c from '../assets/c++.svg'
 import i_react from '../assets/react.svg'
 
+import BehanceIcon from '../assets/behance_icon.svg'
 import LinkedInIcon from '../assets/linkedin_icon.svg'
 import DocIcon from '../assets/doc_icon.svg'
 import EmailIcon from '../assets/email_icon.svg'
@@ -129,7 +130,17 @@ const [activeProject, setActiveProject] = useState(null);
         </section>
         <section id="projects">
           <div className={styles.card}>
-            <h1>Projects</h1>
+            <div className={styles.header_img_proj}><h1>Projects</h1><div className={styles.links_container_proj}>
+            <Tooltip message="Get more project details!" bottomPercent="125" leftPercent="50">
+              <a
+                target="blank_" href="https://www.behance.net/ianschwarzkopf"
+                className={styles.icon_container_link}
+              >
+                <img src={BehanceIcon} alt="Behance Icon" />
+              </a>
+            </Tooltip>
+          </div>
+        </div>
             <div className={styles.grid_wrapper}>
               <Project
                 name="Monovox"
@@ -142,8 +153,8 @@ const [activeProject, setActiveProject] = useState(null);
                 onClick={() => setActiveProject(projectsData.monovox)}
               />
               <Project
-                name="Head to Head"
-                img="/monovox_1.jpg"
+                name="versus.fm (in development)"
+                img="/versus_1.PNG"
                 desc="Music ranking website using the Spotify API and React"
                 tag1="React"
                 tag2="HTML"
@@ -170,6 +181,76 @@ const [activeProject, setActiveProject] = useState(null);
                 tag3="HTML"
                 tag4="CSS"
                 onClick={() => setActiveProject(projectsData.deimos)}
+              />
+              <Project
+                name="DISCTRIX"
+                img="/disctrix_1.jpg"
+                desc="An ESP32-powered DJ controller"
+                tag1="PCB"
+                tag2="Laser Cutting"
+                tag3="ESP32"
+                tag4="C++"
+                onClick={() => setActiveProject(projectsData.disctrix)}
+              />
+              <Project
+                name="Orbitize"
+                img="/orbitize_1.jpg"
+                desc="An ESP32-powered Fusion 360 controller"
+                tag1="PCB"
+                tag2="ESP32"
+                tag3="3D Printing"
+                tag4="C++"
+                onClick={() => setActiveProject(projectsData.orbitize)}
+              />
+              <Project
+                name="PICTOPANE"
+                img="/pictopane_1.jpg"
+                desc="10x10 Controllable Pixel LED Grid"
+                tag1="PCB"
+                tag2="ESP32"
+                tag3="WLED"
+                tag4="Soldering"
+                onClick={() => setActiveProject(projectsData.pictopane)}
+              />
+              <Project
+                name="RETROLIGHT"
+                img="/retrolight_1.jpg"
+                desc="Mario-themed Desk Light"
+                tag1="PCB"
+                tag2="Acid Etching"
+                tag3="Laser Cutting"
+                tag4="Soldering"
+                onClick={() => setActiveProject(projectsData.retrolight)}
+              />
+              <Project
+                name="JESUS PEACE"
+                img="/jesuspeace_1.jpg"
+                desc="Portable Bible Verse and Church Calendar Display"
+                tag1="PCB"
+                tag2="Laser Cutting"
+                tag3="C++"
+                tag4="API"
+                onClick={() => setActiveProject(projectsData.jesuspeace)}
+              />
+              <Project
+                name="Microfreak and SP-404 MKII Models"
+                img="/fusion_1.png"
+                desc="Models of the Arturia Microfreak synthesizer and the Roland SP-404MKII sampler"
+                tag1="Fusion 360"
+                tag2="3D Modeling"
+                tag3="Animation"
+                tag4="Precision"
+                onClick={() => setActiveProject(projectsData.fusion)}
+              />
+              <Project
+                name="KARAMBYTE"
+                img="/karambyte_1.jpg"
+                desc="A Custom Karambit Knife"
+                tag1="Laser Cutting"
+                tag2="Waterjet"
+                tag3="Belt Grinder"
+                tag4="Sharpening"
+                onClick={() => setActiveProject(projectsData.karambyte)}
               />
 
             </div>

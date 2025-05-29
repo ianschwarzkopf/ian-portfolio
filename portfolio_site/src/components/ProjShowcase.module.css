@@ -39,8 +39,9 @@
   width: 100%;
   max-height: 60vh;
   border-radius: 24px;
-  object-fit: cover;
+  object-fit: contain;
   aspect-ratio: 16/9;
+  background: rgba(114, 117, 114, 0.2);
 }
 
 .navButtonLeft, .navButtonRight {
@@ -96,11 +97,24 @@
 
 .overlay p {
   margin-left: 4px;
+  font-size: 1.5rem;
 }
 
 .overlay h4 {
   color: rgba(230, 232, 230, .75);
   margin-left: 4px;
+}
+
+p a {
+  color: #E6E8E6;
+  font-family: "Satoshi", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+p a:hover {
+  color: rgba(230, 232, 230, 0.75);
 }
 
 .tag_wrapper {
