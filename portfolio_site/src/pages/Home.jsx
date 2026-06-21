@@ -99,21 +99,21 @@ const [activeProject, setActiveProject] = useState(null);
               </div>
               <h1>Experience</h1>
               <div className={styles.experience}>
-                <span><h4>Web Developer</h4><h4 style={{textAlign: 'right'}}>Clip Art Monster</h4></span>
+                <span><h4>Associate Web Developer</h4><h4 style={{textAlign: 'right'}}>Ascension Marketing Group</h4></span>
+                <span><h5>Remote</h5><h5 style={{textAlign: 'right'}}>Sept 2025 - Current</h5></span>
+                <ul>
+                  <li>Maintained and updated a large ecommerce website and database using Laravel</li>
+                  <li>Alpine.js and Vue.js for JavaScript front-end components</li>
+                  <li>Utilized GitHub and Basecamp for version control and collaboration</li>
+                </ul>
+              </div>
+              <div className={styles.experience}>
+                <span><h4>Web Developer Intern</h4><h4 style={{textAlign: 'right'}}>Clip Art Monster</h4></span>
                 <span><h5>Remote</h5><h5 style={{textAlign: 'right'}}>May 2025 - Current</h5></span>
                 <ul>
                   <li>Built web pages using HTML, CSS, and JavaScript on a Django/Python backend</li>
                   <li>Improved mobile usability with user-focused design and smooth animations</li>
                   <li>Collaborated with team members to align visuals with user experience goals</li>
-                </ul>
-              </div>
-              <div className={styles.experience}>
-                <span><h4>Sound Coordinator</h4><h4 style={{textAlign: 'right'}}>Chaplain's Office</h4></span>
-                <span><h5>Mt. Berry, GA</h5><h5 style={{textAlign: 'right'}}>Aug 2023 - May 2025</h5></span>
-                <ul>
-                  <li>Operated soundboard and managed live audio for weekly services</li>
-                  <li>Controlled camera and live streams using OBS to broadcast lectures and events</li>
-                  <li>Provided hospitality to office visitors, offering coffee, guidance, and directions</li>
                 </ul>
               </div>
               <div className={styles.experience}>
@@ -144,7 +144,7 @@ const [activeProject, setActiveProject] = useState(null);
             <div className={styles.grid_wrapper}>
               <Project
                 name="Monovox"
-                img="/monovox_1.jpg"
+                img="/monovox_1.webp"
                 desc="An analog synthesizer that blends raw voltage with real-time visual interaction"
                 tag1="PCB"
                 tag2="ESP32"
@@ -154,7 +154,7 @@ const [activeProject, setActiveProject] = useState(null);
               />
               <Project
                 name="versus.fm (in development)"
-                img="/versus_1.PNG"
+                img="/versus_1.webp"
                 desc="Music ranking website using the Spotify API and React"
                 tag1="React"
                 tag2="HTML"
@@ -164,7 +164,7 @@ const [activeProject, setActiveProject] = useState(null);
               />
               <Project
                 name="runTime"
-                img="/runtime_1.jpg"
+                img="/runtime_1.webp"
                 desc="A run tracking webapp with a user database"
                 tag1="HTML"
                 tag2="Bootstrap"
@@ -174,7 +174,7 @@ const [activeProject, setActiveProject] = useState(null);
               />
               <Project
                 name="Deimos Sound Study"
-                img="/deimos_1.png"
+                img="/deimos_1.webp"
                 desc="A decibel tracking device that was used to conduct a study on noise levels"
                 tag1="PCB"
                 tag2="ESP32"
@@ -184,7 +184,7 @@ const [activeProject, setActiveProject] = useState(null);
               />
               <Project
                 name="DISCTRIX"
-                img="/disctrix_1.jpg"
+                img="/disctrix_1.webp"
                 desc="An ESP32-powered DJ controller"
                 tag1="PCB"
                 tag2="Laser Cutting"
@@ -194,7 +194,7 @@ const [activeProject, setActiveProject] = useState(null);
               />
               <Project
                 name="Orbitize"
-                img="/orbitize_1.jpg"
+                img="/orbitize_1.webp"
                 desc="An ESP32-powered Fusion 360 controller"
                 tag1="PCB"
                 tag2="ESP32"
@@ -204,7 +204,7 @@ const [activeProject, setActiveProject] = useState(null);
               />
               <Project
                 name="PICTOPANE"
-                img="/pictopane_1.jpg"
+                img="/pictopane_1.webp"
                 desc="10x10 Controllable Pixel LED Grid"
                 tag1="PCB"
                 tag2="ESP32"
@@ -214,7 +214,7 @@ const [activeProject, setActiveProject] = useState(null);
               />
               <Project
                 name="RETROLIGHT"
-                img="/retrolight_1.jpg"
+                img="/retrolight_1.webp"
                 desc="Mario-themed Desk Light"
                 tag1="PCB"
                 tag2="Acid Etching"
@@ -224,7 +224,7 @@ const [activeProject, setActiveProject] = useState(null);
               />
               <Project
                 name="JESUS PEACE"
-                img="/jesuspeace_1.jpg"
+                img="/jesuspeace_1.webp"
                 desc="Portable Bible Verse and Church Calendar Display"
                 tag1="PCB"
                 tag2="Laser Cutting"
@@ -234,7 +234,7 @@ const [activeProject, setActiveProject] = useState(null);
               />
               <Project
                 name="Microfreak and SP-404 MKII Models"
-                img="/fusion_1.png"
+                img="/fusion_1.webp"
                 desc="Models of the Arturia Microfreak synthesizer and the Roland SP-404MKII sampler"
                 tag1="Fusion 360"
                 tag2="3D Modeling"
@@ -244,7 +244,7 @@ const [activeProject, setActiveProject] = useState(null);
               />
               <Project
                 name="KARAMBYTE"
-                img="/karambyte_1.jpg"
+                img="/karambyte_1.webp"
                 desc="A Custom Karambit Knife"
                 tag1="Laser Cutting"
                 tag2="Waterjet"

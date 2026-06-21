@@ -1,3 +1,5 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@100,300,400,500,600,700,900&display=swap');
+
 :root {
   font-family: "Satoshi", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1;

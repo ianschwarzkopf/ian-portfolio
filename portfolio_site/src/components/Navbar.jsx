@@ -87,34 +87,6 @@ function Navbar() {
           </a>
         </Tooltip>
 
-        {/* <div className={styles.divider}></div>
-
-        <Tooltip message="LinkedIn" bottomPercent="25" leftPercent="216">
-          <a
-            target="blank_" href="https://www.linkedin.com/in/ian-schwarzkopf-85a850249/"
-            className={styles.icon_container_link}
-          >
-            <img src={LinkedInIcon} alt="LinkedIn Icon" />
-          </a>
-        </Tooltip>
-
-        <Tooltip message="Check out my resume!" bottomPercent="25" leftPercent="301">
-          <a
-            target="blank_" href="https://www.behance.net/ianschwarzkopf"
-            className={styles.icon_container_link}
-          >
-            <img src={DocIcon} alt="Document Icon" />
-          </a>
-        </Tooltip>
-
-        <Tooltip message="Send me an email!" bottomPercent="25" leftPercent="276">
-          <a
-            href="mailto:schwarzkopfian@gmail.com"
-            className={styles.icon_container_link}
-          >
-            <img src={EmailIcon} alt="Email Icon" />
-          </a>
-        </Tooltip> */}
       </div>
     </nav>
   )

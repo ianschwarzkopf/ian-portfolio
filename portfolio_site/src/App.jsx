@@ -7,6 +7,7 @@ import AnimatedBackground from './components/BackgroundBlob';
 
 import Home from './pages/Home'
 
+
 function App() {
 
   return (
@@ -17,7 +18,6 @@ function App() {
         <Home />
 
         <Footer />
-
     </>
   )
 }
