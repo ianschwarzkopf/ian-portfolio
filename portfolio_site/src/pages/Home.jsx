@@ -109,7 +109,7 @@ const [activeProject, setActiveProject] = useState(null);
               </div>
               <div className={styles.experience}>
                 <span><h4>Web Developer Intern</h4><h4 style={{textAlign: 'right'}}>Clip Art Monster</h4></span>
-                <span><h5>Remote</h5><h5 style={{textAlign: 'right'}}>May 2025 - Current</h5></span>
+                <span><h5>Remote</h5><h5 style={{textAlign: 'right'}}>May 2025 - Sept 2025</h5></span>
                 <ul>
                   <li>Built web pages using HTML, CSS, and JavaScript on a Django/Python backend</li>
                   <li>Improved mobile usability with user-focused design and smooth animations</li>
