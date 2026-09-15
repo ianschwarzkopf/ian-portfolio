@@ -102,27 +102,27 @@ const [activeProject, setActiveProject] = useState(null);
                 <span><h4>Associate Web Developer</h4><h4 style={{textAlign: 'right'}}>Ascension Marketing Group</h4></span>
                 <span><h5>Remote</h5><h5 style={{textAlign: 'right'}}>Sept 2025 - Current</h5></span>
                 <ul>
-                  <li>Maintained and updated a large ecommerce website and database using Laravel</li>
-                  <li>Alpine.js and Vue.js for JavaScript front-end components</li>
-                  <li>Utilized GitHub and Basecamp for version control and collaboration</li>
+                  <li>Maintained and extended a large-scale ecommerce platform in Laravel, providing new features for over 750,000 customers</li>
+                  <li>Built reusable components with Vue.js, improving internal workflow with new dashboards replacing spreadsheets and external software</li>
+                  <li>Integrated Salesforce and Docusign APIs to automate customer document signing and sync Salesforce object updates</li>
+                  <li>Built customer-facing tools in Alpine.js, including a loan estimation calculator, limited-time product listings, and product video carousel integration</li>
                 </ul>
               </div>
               <div className={styles.experience}>
                 <span><h4>Web Developer Intern</h4><h4 style={{textAlign: 'right'}}>Clip Art Monster</h4></span>
                 <span><h5>Remote</h5><h5 style={{textAlign: 'right'}}>May 2025 - Sept 2025</h5></span>
                 <ul>
-                  <li>Built web pages using HTML, CSS, and JavaScript on a Django/Python backend</li>
-                  <li>Improved mobile usability with user-focused design and smooth animations</li>
-                  <li>Collaborated with team members to align visuals with user experience goals</li>
+                  <li>Designed and built responsive web pages using HTML, CSS, and JavaScript on a Django backend</li>
+                  <li>Redesigned the search and filters page with smoother animations and clearer visual hierarchy</li>
+                  <li>Collaborated with team members to translate mockups into functioning UI, closing the gap between visual design and shipped product</li>
                 </ul>
               </div>
               <div className={styles.experience}>
                 <span><h4>Teaching Assistant</h4><h4 style={{textAlign: 'right'}}>Berry College</h4></span>
                 <span><h5>Mt. Berry, GA</h5><h5 style={{textAlign: 'right'}}>Aug 2024 - May 2025</h5></span>
                 <ul>
-                  <li>Supported students across three course sections, providing personalized help and feedback</li>
-                  <li>Assisted students with 3D modeling, electronic circuits, and Java programming</li>
-                  <li>Delivered hands-on instruction and guidance on technical concepts, improving student comprehension and project quality</li>
+                  <li>Supported over 40 students with 3D modeling, electronics, and Java courses, helping improve student understanding and homework completion</li>
+                  <li>Debugged student circuit and code issues 1:1, translating abstract concepts into concrete, hands-on explanations</li>
                 </ul>
               </div>
             </div>
